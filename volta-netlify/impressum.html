@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTA — Impressum</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top navigation bar (visible at page top) -->
+  <nav class="topnav" id="topnav">
+    <a href="index.html" class="topnav__logo">VOLTA</a>
+    <ul class="topnav__links">
+      <li><a href="index.html" class="topnav__link">Startseite</a></li>
+      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
+      <li class="topnav__item--has-sub">
+        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">&#x25be;</span></a>
+        <ul class="topnav__sub">
+          <li><a href="unser-ziel.html" class="topnav__sublink">&#xdc;berblick</a></li>
+          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
+      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
+      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
+  </nav>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">VOLTA</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
+    <div class="sidebar__top">
+      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+    </div>
+    <ul class="sidebar__nav">
+      <li class="sidebar__item" style="--i:1">
+        <a href="index.html" class="sidebar__link">
+          <span class="sidebar__num">01</span>
+          <span class="sidebar__text">Startseite</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:2">
+        <a href="wer-sind-wir.html" class="sidebar__link">
+          <span class="sidebar__num">02</span>
+          <span class="sidebar__text">Wer sind wir?</span>
+        </a>
+      </li>
+      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
+        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Unsere Ziele</span>
+          <span class="sidebar__arrow">↓</span>
+        </button>
+        <ul class="sidebar__sub">
+          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
+          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:6">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">06</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+      </li>
+      <li class="sidebar__item" style="--i:3">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="impressum-wrap">
+
+        <h1 class="reveal-line"><span>Impressum</span></h1>
+
+        <div class="impressum-block reveal">
+          <h2>Angaben gemäß § 5 TMG</h2>
+          <address>
+            VOLTA Marketing GmbH<br>
+            Torstraße 42<br>
+            10119 Berlin<br>
+            Deutschland
+          </address>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Vertreten durch</h2>
+          <p>Lena Müller (Geschäftsführerin)<br>
+          Jonas Wagner (Geschäftsführer)</p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Kontakt</h2>
+          <p>
+            Telefon: <a href="tel:+4930123456789">+49 30 123 456 789</a><br>
+            E-Mail: <a href="mailto:hello@volta-marketing.de">hello@volta-marketing.de</a>
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Handelsregister</h2>
+          <p>
+            Eingetragen beim Amtsgericht Berlin-Charlottenburg<br>
+            Handelsregisternummer: HRB 123456 B
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Umsatzsteuer-Identifikationsnummer</h2>
+          <p>
+            USt-IdNr. gemäß § 27 a Umsatzsteuergesetz:<br>
+            DE 123 456 789
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV</h2>
+          <p>
+            Lena Müller<br>
+            Torstraße 42<br>
+            10119 Berlin
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>EU-Streitschlichtung</h2>
+          <p>
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS)
+            bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">
+            https://ec.europa.eu/consumers/odr/</a><br>
+            Unsere E-Mail-Adresse finden Sie oben im Impressum.
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+          <p>
+            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
+            vor einer Verbraucherschlichtungsstelle teilzunehmen.
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Haftung für Inhalte</h2>
+          <p>
+            Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf
+            diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10
+            TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+            gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen,
+            die auf eine rechtswidrige Tätigkeit hinweisen.
+          </p>
+          <p>
+            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen
+            nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche
+            Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
+            Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen
+            werden wir diese Inhalte umgehend entfernen.
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Haftung für Links</h2>
+          <p>
+            Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte
+            wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch
+            keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der
+            jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+          </p>
+          <p>
+            Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche
+            Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+            Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der
+            verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung
+            nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige
+            Links umgehend entfernen.
+          </p>
+        </div>
+
+        <div class="impressum-block reveal">
+          <h2>Urheberrecht</h2>
+          <p>
+            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+            unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
+            Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
+            bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
+            Gebrauch gestattet.
+          </p>
+          <p>
+            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden,
+            werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter
+            als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung
+            aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden
+            von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">VOLTA</span>
+        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
+        <a href="kontakt.html" class="footer__link">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTA — Creative Direction</title>
+  <meta name="description" content="Visuelles Storytelling und Kreativkonzepte, die auffallen und funktionieren.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top navigation bar (visible at page top) -->
+  <nav class="topnav" id="topnav">
+    <a href="index.html" class="topnav__logo">VOLTA</a>
+    <ul class="topnav__links">
+      <li><a href="index.html" class="topnav__link">Startseite</a></li>
+      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
+      <li class="topnav__item--has-sub">
+        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">&#x25be;</span></a>
+        <ul class="topnav__sub">
+          <li><a href="unser-ziel.html" class="topnav__sublink">&#xdc;berblick</a></li>
+          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
+      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
+      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
+  </nav>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">VOLTA</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
+    <div class="sidebar__top">
+      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+    </div>
+    <ul class="sidebar__nav">
+      <li class="sidebar__item" style="--i:1">
+        <a href="index.html" class="sidebar__link">
+          <span class="sidebar__num">01</span>
+          <span class="sidebar__text">Startseite</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:2">
+        <a href="wer-sind-wir.html" class="sidebar__link">
+          <span class="sidebar__num">02</span>
+          <span class="sidebar__text">Wer sind wir?</span>
+        </a>
+      </li>
+      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
+        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Unsere Ziele</span>
+          <span class="sidebar__arrow">↓</span>
+        </button>
+        <ul class="sidebar__sub">
+          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
+          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:6">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">06</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+      </li>
+      <li class="sidebar__item" style="--i:3">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="mission-hero section">
+      <div class="container">
+        <span class="label reveal">Leistung</span>
+        <h1 class="mission-headline">
+          <span class="reveal-line"><span>CREATIVE</span></span>
+          <span class="reveal-line delay-1"><span style="color:var(--accent);">DIRECTION.</span></span>
+        </h1>
+        <p class="reveal delay-2" style="margin-top:var(--s8);font-size:1.15rem;line-height:1.85;color:var(--text-2);max-width:700px;">
+          Gute Ideen sterben in schlechter Ausführung. Schlechte Ausführung überlebt
+          keine gute Idee. Creative Direction ist die Disziplin, die beides zusammenbringt —
+          der rote Faden durch alles, was deine Marke nach außen trägt.
+        </p>
+      </div>
+    </section>
+
+    <!-- WAS WIR TUN -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="label reveal">Was wir tun</span>
+            <p class="reveal delay-1">
+              Wir entwickeln die visuelle und kommunikative Sprache deiner Marke —
+              von der Kampagnen-Idee bis zum fertigen Asset. Dabei denken wir immer
+              kanalübergreifend: Was auf Instagram funktioniert, muss auf einer
+              Großfläche genauso wirken.
+            </p>
+            <p class="reveal delay-2">
+              Unser Creative-Team verbindet strategisches Denken mit handwerklicher
+              Perfektion. Wir fragen nicht nur „Sieht das gut aus?", sondern
+              „Funktioniert das?" — und wir antworten mit Zahlen, nicht mit Meinungen.
+            </p>
+          </div>
+          <div>
+            <div class="values-list">
+              <div class="value-row reveal delay-1">
+                <span class="value-row__num">01</span>
+                <span class="value-row__text">Kampagnenkonzeption</span>
+              </div>
+              <div class="value-row reveal delay-2">
+                <span class="value-row__num">02</span>
+                <span class="value-row__text">Visual Identity & Design-System</span>
+              </div>
+              <div class="value-row reveal delay-3">
+                <span class="value-row__num">03</span>
+                <span class="value-row__text">Art Direction & Fotoproduktion</span>
+              </div>
+              <div class="value-row reveal delay-4">
+                <span class="value-row__num">04</span>
+                <span class="value-row__text">Motion & Video-Konzept</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>KONZEPT ·</span>
+        <span>VISUELL ·</span>
+        <span>STORYTELLING ·</span>
+        <span>EMOTION ·</span>
+        <span>WIRKUNG ·</span>
+        <span>HANDWERK ·</span>
+        <span>KONZEPT ·</span>
+        <span>VISUELL ·</span>
+        <span>STORYTELLING ·</span>
+        <span>EMOTION ·</span>
+        <span>WIRKUNG ·</span>
+        <span>HANDWERK ·</span>
+      </div>
+    </div>
+
+    <!-- PROZESS -->
+    <section class="section">
+      <div class="container">
+        <span class="label reveal">Unser Prozess</span>
+        <div class="pillars-grid" style="margin-top:var(--s6);">
+
+          <div class="pillar reveal delay-1">
+            <span class="pillar__num">01 — Briefing & Ideation</span>
+            <h2 class="pillar__title">Die Idee hat Priorität</h2>
+            <p class="pillar__body">
+              Wir starten immer mit der Kernidee — dem One-Liner, der alles
+              zusammenfasst. Erst wenn die Idee stark genug ist, beginnt die
+              Ausführung. Kein Design ohne Konzept.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-2">
+            <span class="pillar__num">02 — Moodboards & Direction</span>
+            <h2 class="pillar__title">Richtung setzen</h2>
+            <p class="pillar__body">
+              Wir entwickeln verschiedene kreative Richtungen und entscheiden
+              gemeinsam mit dir, welche am besten zur Marke passt. Transparent,
+              schnell, ohne wochenlange Abstimmungsschleifen.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-3">
+            <span class="pillar__num">03 — Produktion & Delivery</span>
+            <h2 class="pillar__title">Von der Skizze zum Endprodukt</h2>
+            <p class="pillar__body">
+              Wir liefern pixelperfekte Ergebnisse — für alle Kanäle und
+              Formate, die du brauchst. Mit einem klaren Übergabeprozess,
+              damit dein Team sofort loslegen kann.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EYECATCHER -->
+    <div class="eyecatcher">
+      <span class="eyecatcher__big reveal">Wirkung.</span>
+      <p class="eyecatcher__copy reveal delay-1">
+        Kreativität ohne Strategie ist Kunst. Strategie ohne Kreativität ist
+        Buchhaltung. Wir liefern beides — und das Ergebnis ist Marketing, das
+        wirklich bewegt.
+      </p>
+    </div>
+
+    <!-- WAS DU BEKOMMST -->
+    <section class="section">
+      <div class="container">
+        <span class="label reveal">Was du bekommst</span>
+        <div class="pillars-grid" style="margin-top:var(--s6);">
+
+          <div class="pillar reveal delay-1">
+            <span class="pillar__num">Deliverable 01</span>
+            <h2 class="pillar__title">Kreativkonzept</h2>
+            <p class="pillar__body">
+              Ein vollständiges Kreativkonzept mit Kernidee, Moodboard,
+              Farb- und Typografieprinzipien sowie Anwendungsbeispielen —
+              als Vorlage für alle Kampagnen, die folgen.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-2">
+            <span class="pillar__num">Deliverable 02</span>
+            <h2 class="pillar__title">Fertige Assets</h2>
+            <p class="pillar__body">
+              Alle vereinbarten Werbemittel, Stories, Banner, Key Visuals und
+              Bewegtbild-Konzepte — druckfertig oder digital, in allen
+              benötigten Formaten.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-3">
+            <span class="pillar__num">Deliverable 03</span>
+            <h2 class="pillar__title">Design-System</h2>
+            <p class="pillar__body">
+              Auf Wunsch erstellen wir ein skalierbares Design-System, mit dem
+              dein Team eigenständig neue Materialien erstellen kann —
+              konsistent, schnell und immer on-brand.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2 class="reveal" style="
+          font-family:var(--font-display);
+          font-size:clamp(2rem,4.5vw,4.5rem);
+          font-weight:700;
+          letter-spacing:-0.03em;
+          line-height:1.08;
+          margin-bottom:var(--s6);
+        ">
+          Bereit für Kreativität,<br>
+          <span style="color:var(--accent);">die ankommt?</span>
+        </h2>
+        <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+          <a href="kontakt.html" class="btn btn-primary reveal delay-1">
+            Projekt besprechen <span class="btn-arrow">→</span>
+          </a>
+          <a href="index.html" class="btn btn-outline reveal delay-2">
+            Zurück zur Startseite
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">VOLTA</span>
+        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
+        <a href="impressum.html" class="footer__link">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

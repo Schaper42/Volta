@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTA — Das Team</title>
+  <meta name="description" content="Lern die Menschen hinter VOLTA kennen.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Team-page specific: photo placeholder gradients */
+    .photo-lena   { background: linear-gradient(145deg, #3d2b6b 0%, #7c3aed 60%, #a78bfa 100%); }
+    .photo-max    { background: linear-gradient(145deg, #064e3b 0%, #059669 60%, #6ee7b7 100%); }
+    .photo-sophie { background: linear-gradient(145deg, #7f1d1d 0%, #dc2626 60%, #fb923c 100%); }
+    .photo-jonas  { background: linear-gradient(145deg, #0c4a6e 0%, #0284c7 60%, #38bdf8 100%); }
+    .photo-mia    { background: linear-gradient(145deg, #701a75 0%, #d946ef 60%, #f0abfc 100%); }
+    .photo-timo   { background: linear-gradient(145deg, #431407 0%, #c2410c 60%, #fdba74 100%); }
+  </style>
+</head>
+<body>
+
+  <!-- Top navigation bar (visible at page top) -->
+  <nav class="topnav" id="topnav">
+    <a href="index.html" class="topnav__logo">VOLTA</a>
+    <ul class="topnav__links">
+      <li><a href="index.html" class="topnav__link">Startseite</a></li>
+      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
+      <li class="topnav__item--has-sub">
+        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">&#x25be;</span></a>
+        <ul class="topnav__sub">
+          <li><a href="unser-ziel.html" class="topnav__sublink">&#xdc;berblick</a></li>
+          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
+      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
+      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
+  </nav>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">VOLTA</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
+    <div class="sidebar__top">
+      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+    </div>
+    <ul class="sidebar__nav">
+      <li class="sidebar__item" style="--i:1">
+        <a href="index.html" class="sidebar__link">
+          <span class="sidebar__num">01</span>
+          <span class="sidebar__text">Startseite</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:2">
+        <a href="wer-sind-wir.html" class="sidebar__link">
+          <span class="sidebar__num">02</span>
+          <span class="sidebar__text">Wer sind wir?</span>
+        </a>
+      </li>
+      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
+        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Unsere Ziele</span>
+          <span class="sidebar__arrow">↓</span>
+        </button>
+        <ul class="sidebar__sub">
+          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
+          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:6">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">06</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+      </li>
+      <li class="sidebar__item" style="--i:3">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
+  </nav>
+
+  <main>
+
+    <!-- TEAM HERO -->
+    <section class="team-hero">
+      <div class="container">
+        <span class="label reveal">Das Team</span>
+        <h1 class="reveal-line delay-1" style="
+          font-family:var(--font-display);
+          font-size:clamp(3.5rem,9vw,10rem);
+          font-weight:700;
+          letter-spacing:-0.04em;
+          line-height:0.88;
+          text-transform:uppercase;
+          margin-bottom:var(--s6);
+        ">
+          <span>DIE KÖPFE<br><span style="color:var(--accent);">HINTER DEM LÄRM.</span></span>
+        </h1>
+        <p class="reveal delay-2" style="font-size:1.1rem;line-height:1.8;color:var(--text-2);max-width:600px;">
+          Wir sind kein gesichtsloses Kollektiv. Wir sind zwölf eigensinnige,
+          hochqualifizierte Individuen mit zu vielen Meinungen — und das ist genau
+          das, was unsere Arbeit so gut macht.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEAM GRID -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="team-grid">
+
+          <!-- Card 1: Lena -->
+          <article class="team-card reveal delay-1">
+            <div class="team-card__photo">
+              <div class="team-card__photo-bg photo-lena">LM</div>
+            </div>
+            <div class="team-card__body">
+              <h2 class="team-card__name">Lena Müller</h2>
+              <p class="team-card__role">Creative Director &amp; Co-Gründerin</p>
+              <p class="team-card__bio">
+                Trinkt ihren Kaffee schwarz wie ihre Humor-Memes. Hat noch nie ein
+                Briefing gelesen, das sie nicht umgeschmissen hat — und hatte dabei
+                jedes einzelne Mal recht.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Jonas -->
+          <article class="team-card reveal delay-2">
+            <div class="team-card__photo">
+              <div class="team-card__photo-bg photo-jonas">JW</div>
+            </div>
+            <div class="team-card__body">
+              <h2 class="team-card__name">Jonas Wagner</h2>
+              <p class="team-card__role">Strategy Director &amp; Co-Gründer</p>
+              <p class="team-card__bio">
+                Denkt immer drei Schritte voraus und erklärt dir erst hinterher,
+                warum du von Anfang an falsch lagst. Aber er hat recht. Verdammt.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Max -->
+          <article class="team-card reveal delay-3">
+            <div class="team-card__photo">
+              <div class="team-card__photo-bg photo-max">MK</div>
+            </div>
+            <div class="team-card__body">
+              <h2 class="team-card__name">Max Keller</h2>
+              <p class="team-card__role">Performance Lead</p>
+              <p class="team-card__bio">
+                Optimiert Kampagnen im Schlaf und seine Spotify-Wrapped jedes Jahr
+                aufs Neue. ROI ist sein zweiter Vorname — der erste lautet „maximaler".
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Sophie -->
+          <article class="team-card reveal delay-1">
+            <div class="team-card__photo">
+              <div class="team-card__photo-bg photo-sophie">SB</div>
+            </div>
+            <div class="team-card__body">
+              <h2 class="team-card__name">Sophie Braun</h2>
+              <p class="team-card__role">Head of Social Media</p>
+              <p class="team-card__bio">
+                Postet schneller als ihr Schatten und kennt jeden Trend drei Wochen
+                vor dir. Ihr Algorithmus-Verständnis grenzt an Magie — sie sagt, es
+                ist nur Mühe. Wir glauben ihr nicht.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 5: Mia -->
+          <article class="team-card reveal delay-2">
+            <div class="team-card__photo">
+              <div class="team-card__photo-bg photo-mia">MH</div>
+            </div>
+            <div class="team-card__body">
+              <h2 class="team-card__name">Mia Hoffmann</h2>
+              <p class="team-card__role">Brand Design</p>
+              <p class="team-card__bio">
+                Wurde einmal wegen zu gutem Kerning gelobt und hat seitdem den
+                Anspruch auf „zu gut" als Mindeststandard gesetzt. Whitespace
+                ist für sie keine Leere, sondern ein Statement.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 6: Timo -->
+          <article class="team-card reveal delay-3">
+            <div class="team-card__photo">
+              <div class="team-card__photo-bg photo-timo">TR</div>
+            </div>
+            <div class="team-card__body">
+              <h2 class="team-card__name">Timo Roth</h2>
+              <p class="team-card__role">Content &amp; Copy</p>
+              <p class="team-card__bio">
+                Schreibt Headlines, die hängen bleiben — meistens nach dem dritten
+                Espresso. Behauptet, er könne für jedes Produkt der Welt eine
+                überzeugende Story erzählen. Wir testen das gerade mit Büroklammern.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- We're hiring -->
+        <div class="reveal" style="
+          background:var(--bg-2);
+          border:1px solid var(--border);
+          border-radius:var(--r-xl);
+          padding:var(--s8) var(--s8);
+          display:flex;
+          align-items:center;
+          justify-content:space-between;
+          gap:var(--s6);
+          flex-wrap:wrap;
+          margin-top:var(--s4);
+        ">
+          <div>
+            <span class="label">We're hiring</span>
+            <h3 style="
+              font-family:var(--font-display);
+              font-size:clamp(1.5rem,3vw,2.5rem);
+              font-weight:700;
+              letter-spacing:-0.02em;
+              line-height:1.1;
+            ">Du passt ins Bild?<br>Dann reden wir.</h3>
+          </div>
+          <a href="kontakt.html" class="btn btn-primary">
+            Bewerbung senden <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">VOLTA</span>
+        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
+        <a href="impressum.html" class="footer__link">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

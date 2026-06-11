@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTA — Social Media</title>
+  <meta name="description" content="Social Media Strategie, Content und Community Management, das deine Marke wachsen lässt.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top navigation bar (visible at page top) -->
+  <nav class="topnav" id="topnav">
+    <a href="index.html" class="topnav__logo">VOLTA</a>
+    <ul class="topnav__links">
+      <li><a href="index.html" class="topnav__link">Startseite</a></li>
+      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
+      <li class="topnav__item--has-sub">
+        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">&#x25be;</span></a>
+        <ul class="topnav__sub">
+          <li><a href="unser-ziel.html" class="topnav__sublink">&#xdc;berblick</a></li>
+          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
+      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
+      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
+  </nav>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">VOLTA</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
+    <div class="sidebar__top">
+      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+    </div>
+    <ul class="sidebar__nav">
+      <li class="sidebar__item" style="--i:1">
+        <a href="index.html" class="sidebar__link">
+          <span class="sidebar__num">01</span>
+          <span class="sidebar__text">Startseite</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:2">
+        <a href="wer-sind-wir.html" class="sidebar__link">
+          <span class="sidebar__num">02</span>
+          <span class="sidebar__text">Wer sind wir?</span>
+        </a>
+      </li>
+      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
+        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Unsere Ziele</span>
+          <span class="sidebar__arrow">↓</span>
+        </button>
+        <ul class="sidebar__sub">
+          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
+          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:6">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">06</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="mission-hero section">
+      <div class="container">
+        <span class="label reveal">Leistung</span>
+        <h1 class="mission-headline">
+          <span class="reveal-line"><span>SOCIAL</span></span>
+          <span class="reveal-line delay-1"><span style="color:var(--accent);">MEDIA.</span></span>
+        </h1>
+        <p class="reveal delay-2" style="margin-top:var(--s8);font-size:1.15rem;line-height:1.85;color:var(--text-2);max-width:700px;">
+          Social Media ist kein Marketingkanal. Es ist eine tägliche Entscheidung,
+          wie deine Marke mit der Welt spricht. Wir helfen dir, diese Entscheidung
+          richtig zu treffen — konsequent, kreativ und plattformgerecht.
+        </p>
+      </div>
+    </section>
+
+    <!-- WAS WIR TUN -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="label reveal">Was wir tun</span>
+            <p class="reveal delay-1">
+              Wir übernehmen alles — von der Strategie über die Content-Produktion
+              bis zum Community Management. Dein Feed soll nicht nur gut aussehen,
+              sondern funktionieren: Reichweite aufbauen, Vertrauen schaffen und
+              echte Conversions erzeugen.
+            </p>
+            <p class="reveal delay-2">
+              Jede Plattform hat ihre eigene Logik. Was auf Instagram zieht,
+              floppt auf LinkedIn. Was auf TikTok viral geht, nervt auf Facebook.
+              Wir kennen die Unterschiede — und nutzen sie für dich.
+            </p>
+          </div>
+          <div>
+            <div class="values-list">
+              <div class="value-row reveal delay-1">
+                <span class="value-row__num">01</span>
+                <span class="value-row__text">Content-Strategie & Redaktionsplan</span>
+              </div>
+              <div class="value-row reveal delay-2">
+                <span class="value-row__num">02</span>
+                <span class="value-row__text">Content-Produktion (Text, Bild, Video)</span>
+              </div>
+              <div class="value-row reveal delay-3">
+                <span class="value-row__num">03</span>
+                <span class="value-row__text">Community Management & Moderation</span>
+              </div>
+              <div class="value-row reveal delay-4">
+                <span class="value-row__num">04</span>
+                <span class="value-row__text">Analytics & monatliches Reporting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>INSTAGRAM ·</span>
+        <span>TIKTOK ·</span>
+        <span>LINKEDIN ·</span>
+        <span>CONTENT ·</span>
+        <span>COMMUNITY ·</span>
+        <span>REICHWEITE ·</span>
+        <span>INSTAGRAM ·</span>
+        <span>TIKTOK ·</span>
+        <span>LINKEDIN ·</span>
+        <span>CONTENT ·</span>
+        <span>COMMUNITY ·</span>
+        <span>REICHWEITE ·</span>
+      </div>
+    </div>
+
+    <!-- PROZESS -->
+    <section class="section">
+      <div class="container">
+        <span class="label reveal">Unser Prozess</span>
+        <div class="pillars-grid" style="margin-top:var(--s6);">
+
+          <div class="pillar reveal delay-1">
+            <span class="pillar__num">01 — Plattform-Audit</span>
+            <h2 class="pillar__title">Wo stehst du gerade?</h2>
+            <p class="pillar__body">
+              Wir analysieren bestehende Kanäle, Performance-Daten und
+              Wettbewerber. Daraus leiten wir ab, welche Plattformen für dich
+              Priorität haben und was sofort verbessert werden kann.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-2">
+            <span class="pillar__num">02 — Content-Konzept</span>
+            <h2 class="pillar__title">Was du erzählst, wie du es erzählst</h2>
+            <p class="pillar__body">
+              Wir entwickeln eine Content-Strategie mit klaren Formaten,
+              Themen-Säulen und einem Redaktionsplan für die nächsten
+              Monate — damit dein Feed nicht zufällig wirkt.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-3">
+            <span class="pillar__num">03 — Produktion & Betreuung</span>
+            <h2 class="pillar__title">Vollständiges Management</h2>
+            <p class="pillar__body">
+              Wir produzieren alle Inhalte, posten zum richtigen Zeitpunkt,
+              antworten auf Kommentare und liefern dir jeden Monat einen
+              Report, der zeigt, wie deine Community wächst.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EYECATCHER -->
+    <div class="eyecatcher">
+      <span class="eyecatcher__big reveal">Präsenz.</span>
+      <p class="eyecatcher__copy reveal delay-1">
+        Eine inaktive Social-Media-Präsenz ist schlimmer als keine. Sie signalisiert:
+        „Hier ist niemand." Wir sorgen dafür, dass deine Kanäle lebendig sind —
+        und dass jeder Post einen Grund hat, veröffentlicht zu werden.
+      </p>
+    </div>
+
+    <!-- PLATTFORMEN -->
+    <section class="section">
+      <div class="container">
+        <span class="label reveal">Plattformen</span>
+        <div class="pillars-grid" style="margin-top:var(--s6);">
+
+          <div class="pillar reveal delay-1">
+            <span class="pillar__num">Instagram & Facebook</span>
+            <h2 class="pillar__title">Visuell. Präzise. Emotional.</h2>
+            <p class="pillar__body">
+              Stories, Reels, Feed-Posts und Ads — wir nutzen alle Formate
+              gezielt und produzieren Inhalte, die mehr als nur gescrollt werden.
+              Ästhetik und Funktion in Balance.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-2">
+            <span class="pillar__num">TikTok</span>
+            <h2 class="pillar__title">Echt. Schnell. Mutig.</h2>
+            <p class="pillar__body">
+              TikTok belohnt Authentizität — keine hochpolierten Clips,
+              sondern echte Persönlichkeit. Wir wissen, wie man Hooks baut,
+              Trends nutzt und trotzdem on-brand bleibt.
+            </p>
+          </div>
+
+          <div class="pillar reveal delay-3">
+            <span class="pillar__num">LinkedIn</span>
+            <h2 class="pillar__title">Expertise zeigen, Vertrauen bauen.</h2>
+            <p class="pillar__body">
+              LinkedIn ist für B2B-Brands die wichtigste Plattform —
+              und die am meisten unterschätzte. Wir helfen dir, Thought
+              Leadership aufzubauen, ohne langweilig zu wirken.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2 class="reveal" style="
+          font-family:var(--font-display);
+          font-size:clamp(2rem,4.5vw,4.5rem);
+          font-weight:700;
+          letter-spacing:-0.03em;
+          line-height:1.08;
+          margin-bottom:var(--s6);
+        ">
+          Schluss mit Posting<br>
+          <span style="color:var(--accent);">ins Nirgendwo.</span>
+        </h2>
+        <div style="display:flex;gap:var(--s3);justify-content:center;flex-wrap:wrap;">
+          <a href="kontakt.html" class="btn btn-primary reveal delay-1">
+            Social aufbauen <span class="btn-arrow">→</span>
+          </a>
+          <a href="index.html" class="btn btn-outline reveal delay-2">
+            Zurück zur Startseite
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">VOLTA</span>
+        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
+        <a href="impressum.html" class="footer__link">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

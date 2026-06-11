@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTA — Kontakt</title>
+  <meta name="description" content="Schreib uns. Ruf an. Oder komm vorbei — wir machen Kaffee.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top navigation bar (visible at page top) -->
+  <nav class="topnav" id="topnav">
+    <a href="index.html" class="topnav__logo">VOLTA</a>
+    <ul class="topnav__links">
+      <li><a href="index.html" class="topnav__link">Startseite</a></li>
+      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
+      <li class="topnav__item--has-sub">
+        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">&#x25be;</span></a>
+        <ul class="topnav__sub">
+          <li><a href="unser-ziel.html" class="topnav__sublink">&#xdc;berblick</a></li>
+          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
+      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
+      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
+  </nav>
+
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <header class="header">
+    <a href="index.html" class="logo">VOLTA</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
+      <span class="menu-btn__line"></span>
+      <span class="menu-btn__line"></span>
+    </button>
+  </header>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
+    <div class="sidebar__top">
+      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+    </div>
+    <ul class="sidebar__nav">
+      <li class="sidebar__item" style="--i:1">
+        <a href="index.html" class="sidebar__link">
+          <span class="sidebar__num">01</span>
+          <span class="sidebar__text">Startseite</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:2">
+        <a href="wer-sind-wir.html" class="sidebar__link">
+          <span class="sidebar__num">02</span>
+          <span class="sidebar__text">Wer sind wir?</span>
+        </a>
+      </li>
+      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
+        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Unsere Ziele</span>
+          <span class="sidebar__arrow">↓</span>
+        </button>
+        <ul class="sidebar__sub">
+          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
+          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
+          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
+          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
+          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
+        </ul>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:6">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">06</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+      </li>
+      <li class="sidebar__item" style="--i:3">
+        <a href="das-team.html" class="sidebar__link">
+          <span class="sidebar__num">03</span>
+          <span class="sidebar__text">Das Team</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:4">
+        <a href="kontakt.html" class="sidebar__link">
+          <span class="sidebar__num">04</span>
+          <span class="sidebar__text">Kontakt</span>
+        </a>
+      </li>
+      <li class="sidebar__item" style="--i:5">
+        <a href="impressum.html" class="sidebar__link">
+          <span class="sidebar__num">05</span>
+          <span class="sidebar__text">Impressum</span>
+        </a>
+      </li>
+    </ul>
+    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
+  </nav>
+
+  <main>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <span class="label reveal">Kontakt</span>
+        <h1 class="reveal-line delay-1" style="
+          font-family:var(--font-display);
+          font-size:clamp(3.5rem,9vw,10rem);
+          font-weight:700;
+          letter-spacing:-0.04em;
+          line-height:0.88;
+          text-transform:uppercase;
+          margin-bottom:var(--s6);
+        ">
+          <span>LASS UNS<br><span style="color:var(--accent);">REDEN.</span></span>
+        </h1>
+        <p class="reveal delay-2" style="font-size:1.05rem;line-height:1.8;color:var(--text-2);max-width:560px;">
+          Du hast ein Projekt? Wir haben Ideen. Schreib uns, ruf an oder
+          komm einfach vorbei — wir machen Kaffee, der besser ist als unser Empfang.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Form -->
+          <div>
+            <form class="contact-form reveal" id="contactForm" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name"
+                  placeholder="Dein vollständiger Name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">E-Mail</label>
+                <input class="form-input" type="email" id="email" name="email"
+                  placeholder="deine@email.de" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Betreff</label>
+                <input class="form-input" type="text" id="subject" name="subject"
+                  placeholder="Worum geht es?">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Nachricht</label>
+                <textarea class="form-textarea" id="message" name="message"
+                  placeholder="Erzähl uns von deinem Projekt, Budget und Zeitplan …" required></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">
+                  Nachricht senden <span class="btn-arrow">→</span>
+                </button>
+              </div>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              ✓ &nbsp; Deine Nachricht ist bei uns angekommen — wir melden uns
+              innerhalb von 24 Stunden.
+            </div>
+          </div>
+
+          <!-- Info panel -->
+          <div class="contact-info reveal delay-2">
+
+            <div class="contact-info-item">
+              <p class="info-label">E-Mail</p>
+              <a href="mailto:hello@volta-marketing.de" class="info-value">
+                hello@volta-marketing.de
+              </a>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="info-label">Telefon</p>
+              <a href="tel:+4930123456789" class="info-value">
+                +49 30 123 456 789
+              </a>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="info-label">Adresse</p>
+              <p class="info-value">
+                Torstraße 42<br>
+                10119 Berlin, Deutschland
+              </p>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="info-label">Bürozeiten</p>
+              <p class="info-value">
+                Mo–Fr, 9:00 – 18:00 Uhr
+              </p>
+            </div>
+
+            <div style="margin-top:var(--s5);">
+              <p class="info-label" style="margin-bottom:var(--s2);">Folge uns</p>
+              <div class="social-row">
+                <a href="#" class="social-btn">IG</a>
+                <a href="#" class="social-btn">LI</a>
+                <a href="#" class="social-btn">TK</a>
+                <a href="#" class="social-btn">BE</a>
+              </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div style="
+              margin-top:var(--s5);
+              background:var(--bg-2);
+              border:1px solid var(--border);
+              border-radius:var(--r-lg);
+              aspect-ratio:4/3;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              overflow:hidden;
+              position:relative;
+            ">
+              <div style="
+                position:absolute;
+                inset:0;
+                background:repeating-linear-gradient(
+                  0deg,
+                  transparent,
+                  transparent 39px,
+                  var(--border) 39px,
+                  var(--border) 40px
+                ),
+                repeating-linear-gradient(
+                  90deg,
+                  transparent,
+                  transparent 39px,
+                  var(--border) 39px,
+                  var(--border) 40px
+                );
+              "></div>
+              <div style="
+                position:relative;
+                z-index:1;
+                text-align:center;
+              ">
+                <div style="
+                  width:14px;height:14px;
+                  background:var(--accent);
+                  border-radius:50%;
+                  margin:0 auto var(--s2);
+                  box-shadow:0 0 0 4px var(--accent-dim), 0 0 20px var(--accent);
+                "></div>
+                <p style="font-size:0.75rem;color:var(--text-3);letter-spacing:0.1em;text-transform:uppercase;">
+                  Torstraße 42, Berlin
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">VOLTA</span>
+        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
+        <a href="impressum.html" class="footer__link">Impressum</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
