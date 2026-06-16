@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VOLTA — Wer sind wir?</title>
-  <meta name="description" content="VOLTA ist eine Berliner Marketing-Agentur für Marken, die es ernst meinen.">
+  <title>VOLTA — Web Designer Portfolio</title>
+  <meta name="description" content="Web designer based in Berlin — turning ideas into pixels that convert.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,290 +13,499 @@
 </head>
 <body>
 
-  <!-- Top navigation bar (visible at page top) -->
-  <nav class="topnav" id="topnav">
-    <a href="index.html" class="topnav__logo">VOLTA</a>
-    <ul class="topnav__links">
-      <li><a href="index.html" class="topnav__link">Startseite</a></li>
-      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
-      <li class="topnav__item--has-sub">
-        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">↓</span></a>
-        <ul class="topnav__sub">
-          <li><a href="unser-ziel.html" class="topnav__sublink">Überblick</a></li>
-          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
-          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
-          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
-          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
-        </ul>
-      </li>
-      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
-      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
-      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
-    </ul>
-    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
-  </nav>
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
 
-  <!-- Animated background blobs -->
   <div class="bg-blobs" aria-hidden="true">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
   </div>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor">
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
-  </div>
-
-  <!-- Header -->
-  <header class="header">
-    <a href="index.html" class="logo">VOLTA</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
-      <span class="menu-btn__line"></span>
-      <span class="menu-btn__line"></span>
-    </button>
-  </header>
-
-  <!-- Sidebar overlay -->
-  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
-
-  <!-- Sidebar navigation -->
-  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
-    <div class="sidebar__top">
-      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">VOLTA</a>
+      <ul class="nav__links">
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#cta" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="#cta" class="btn btn-primary nav__cta">Get in touch</a>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <ul class="sidebar__nav">
-      <li class="sidebar__item" style="--i:1">
-        <a href="index.html" class="sidebar__link">
-          <span class="sidebar__num">01</span>
-          <span class="sidebar__text">Startseite</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:2">
-        <a href="wer-sind-wir.html" class="sidebar__link">
-          <span class="sidebar__num">02</span>
-          <span class="sidebar__text">Wer sind wir?</span>
-        </a>
-      </li>
-      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
-        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
-          <span class="sidebar__num">03</span>
-          <span class="sidebar__text">Unsere Ziele</span>
-          <span class="sidebar__arrow">↓</span>
-        </button>
-        <ul class="sidebar__sub">
-          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
-          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
-          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
-          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
-          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
-        </ul>
-      </li>
-      <li class="sidebar__item" style="--i:4">
-        <a href="das-team.html" class="sidebar__link">
-          <span class="sidebar__num">04</span>
-          <span class="sidebar__text">Das Team</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:5">
-        <a href="kontakt.html" class="sidebar__link">
-          <span class="sidebar__num">05</span>
-          <span class="sidebar__text">Kontakt</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:6">
-        <a href="impressum.html" class="sidebar__link">
-          <span class="sidebar__num">06</span>
-          <span class="sidebar__text">Impressum</span>
-        </a>
-      </li>
-    </ul>
-    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
   </nav>
 
-  <!-- ============================================================
-       MAIN CONTENT
-  ============================================================ -->
   <main>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__inner container">
-        <div class="hero__headline-wrap">
-          <h1 class="hero__headline">
-            <span class="hero__line reveal-line"><span>WIR SIND</span></span>
-            <span class="hero__line hero__line--ghost reveal-line delay-1"><span>NICHT</span></span>
-            <span class="hero__line hero__line--accent reveal-line delay-2"><span>NORMAL.</span></span>
-          </h1>
-        </div>
-        <div class="hero__sidebar">
-          <p class="hero__body reveal delay-3">
-            Wir bauen Marken, die bleiben. Keine weichgespülten Halbherzigkeiten —
-            nur scharfes Denken, mutiges Design und Strategien mit Biss.
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__headline-wrap">
+            <h1 class="hero__headline" id="heroHeadline">
+              <span class="hero__phrase hero__phrase--active">Craft digital experiences.</span>
+              <span class="hero__phrase">Build brands people love.</span>
+              <span class="hero__phrase">Design with purpose.</span>
+            </h1>
+          </div>
+          <p class="hero__sub" data-animate="fade-up">
+            Web designer based in Berlin — turning ideas into pixels that convert.
           </p>
-          <div class="tags-row reveal delay-4">
-            <a class="tag" href="brand-strategy.html">Brand Strategy</a>
-            <a class="tag" href="creative-direction.html">Creative Direction</a>
-            <a class="tag" href="performance.html">Performance</a>
-            <a class="tag" href="social-media.html">Social Media</a>
+          <div class="hero__actions" data-animate="fade-up">
+            <a href="#work" class="btn btn-primary">View my work</a>
+            <a href="#cta" class="btn btn-outline">Let's talk</a>
           </div>
-          <a href="kontakt.html" class="btn btn-primary reveal delay-5">
-            Zusammenarbeiten <span class="btn-arrow">→</span>
-          </a>
+        </div>
+
+        <div class="hero__cards" aria-hidden="true">
+          <div class="float-card float-card--1">
+            <img src="https://picsum.photos/seed/aurora/320/220" alt="">
+            <span class="float-card__label">Aurora Studio</span>
+          </div>
+          <div class="float-card float-card--2">
+            <img src="https://picsum.photos/seed/zenith/280/190" alt="">
+            <span class="float-card__label">Zenith Brand</span>
+          </div>
+          <div class="float-card float-card--3">
+            <img src="https://picsum.photos/seed/mosaic/300/200" alt="">
+            <span class="float-card__label">Mosaic App</span>
+          </div>
+          <div class="float-card float-card--4">
+            <img src="https://picsum.photos/seed/prism/260/180" alt="">
+            <span class="float-card__label">Prism Identity</span>
+          </div>
+          <div class="float-card float-card--5">
+            <img src="https://picsum.photos/seed/nomad/310/210" alt="">
+            <span class="float-card__label">Nomad Motion</span>
+          </div>
+          <div class="float-card float-card--6">
+            <img src="https://picsum.photos/seed/lumen/270/185" alt="">
+            <span class="float-card__label">Lumen Web</span>
+          </div>
         </div>
       </div>
 
-      <!-- Running marquee -->
-      <div class="marquee-wrap">
-        <div class="marquee-track">
-          <span>VOLTA ·</span>
-          <span>BRAND STRATEGY ·</span>
-          <span>CREATIVE DIRECTION ·</span>
-          <span>DIGITAL FIRST ·</span>
-          <span>SEIT 2021 ·</span>
-          <span>BERLIN ·</span>
-          <span>VOLTA ·</span>
-          <span>BRAND STRATEGY ·</span>
-          <span>CREATIVE DIRECTION ·</span>
-          <span>DIGITAL FIRST ·</span>
-          <span>SEIT 2021 ·</span>
-          <span>BERLIN ·</span>
+      <div class="hero__scroll" aria-label="Scroll down">
+        <div class="hero__scroll-line"></div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="marquee-section" id="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-inner">
+          <span>UI/UX Design ✦ Brand Identity ✦ Web Development ✦ Motion Design ✦ Visual Strategy ✦ Creative Direction ✦ </span>
+          <span>UI/UX Design ✦ Brand Identity ✦ Web Development ✦ Motion Design ✦ Visual Strategy ✦ Creative Direction ✦ </span>
+          <span>UI/UX Design ✦ Brand Identity ✦ Web Development ✦ Motion Design ✦ Visual Strategy ✦ Creative Direction ✦ </span>
         </div>
       </div>
     </section>
 
-    <!-- SERVICE CARDS -->
-    <section class="section">
-      <div class="container">
-        <span class="label reveal">Was wir tun</span>
-        <div class="services-grid">
-          <a href="brand-strategy.html" class="service-card reveal delay-1">
-            <span class="service-card__num">01</span>
-            <h3 class="service-card__title">Brand Strategy</h3>
-            <p class="service-card__body">Positionierung, Markenwerte, Tone of Voice — das Fundament, auf dem alles andere aufbaut.</p>
-            <span class="service-card__arrow">→</span>
-          </a>
-          <a href="creative-direction.html" class="service-card reveal delay-2">
-            <span class="service-card__num">02</span>
-            <h3 class="service-card__title">Creative Direction</h3>
-            <p class="service-card__body">Kampagnenideen mit Rückgrat. Visual Identity und Design-Systeme, die skalieren.</p>
-            <span class="service-card__arrow">→</span>
-          </a>
-          <a href="performance.html" class="service-card reveal delay-3">
-            <span class="service-card__num">03</span>
-            <h3 class="service-card__title">Performance</h3>
-            <p class="service-card__body">Paid Media, SEA, datengetriebene Optimierung. Jeder Euro zählt — wir sorgen dafür, dass er das tut.</p>
-            <span class="service-card__arrow">→</span>
-          </a>
-          <a href="social-media.html" class="service-card reveal delay-4">
-            <span class="service-card__num">04</span>
-            <h3 class="service-card__title">Social Media</h3>
-            <p class="service-card__body">Content, Community, Wachstum. Instagram, TikTok, LinkedIn — plattformgerecht und konsequent on-brand.</p>
-            <span class="service-card__arrow">→</span>
-          </a>
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__stats">
+          <div class="about__stat" data-animate="fade-up">
+            <span class="about__stat-num">80+</span>
+            <span class="about__stat-label">Projects</span>
+          </div>
+          <div class="about__stat" data-animate="fade-up">
+            <span class="about__stat-num">5</span>
+            <span class="about__stat-label">Years</span>
+          </div>
+          <div class="about__stat" data-animate="fade-up">
+            <span class="about__stat-num">30+</span>
+            <span class="about__stat-label">Clients</span>
+          </div>
+        </div>
+        <div class="about__bio" data-animate="fade-up">
+          <span class="about__label">About me</span>
+          <p class="about__text">
+            I'm a Berlin-based web designer obsessed with the intersection of beauty and function. I work with founders, startups, and established brands to craft digital experiences that don't just look great — they perform.
+          </p>
+          <p class="about__text">
+            From initial concept to shipped product, I bring strategic thinking and hands-on craft to every project. My work spans UI/UX, brand identity, development, and motion — always with a clear purpose.
+          </p>
+          <div class="about__availability">
+            <span class="availability-dot"></span>
+            <span>Available for new projects</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- STATS STRIP -->
-    <div class="stats-strip">
+    <section class="services" id="services">
       <div class="container">
-        <div class="stats-inner">
-          <div class="stat reveal">
-            <span class="stat__num" data-count="50">0</span>
-            <span class="stat__label">Projekte abgeschlossen</span>
-          </div>
-          <div class="stat reveal delay-1">
-            <span class="stat__num" data-count="3">0</span>
-            <span class="stat__label">Jahre auf dem Markt</span>
-          </div>
-          <div class="stat reveal delay-2">
-            <span class="stat__num" data-count="12">0</span>
-            <span class="stat__label">Menschen im Team</span>
-          </div>
-          <div class="stat reveal delay-3">
-            <span class="stat__num" data-count="98">0</span>
-            <span class="stat__label">% Kundenzufriedenheit</span>
-          </div>
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">What I do best</h2>
+        </div>
+        <div class="services__grid">
+          <article class="service-card" data-animate="fade-up">
+            <div class="service-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="26" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 28h12M16 21v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="16" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__desc">Interfaces that feel intuitive and look stunning. From wireframes to polished design systems built to scale.</p>
+            <span class="service-card__arrow">→</span>
+          </article>
+          <article class="service-card" data-animate="fade-up">
+            <div class="service-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M16 4L28 10v12L16 28 4 22V10L16 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Brand Identity</h3>
+            <p class="service-card__desc">Strategic branding that gives you a distinctive voice. Logos, color, typography, and the full visual language.</p>
+            <span class="service-card__arrow">→</span>
+          </article>
+          <article class="service-card" data-animate="fade-up">
+            <div class="service-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M5 9l5.5 5.5L5 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 20h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <rect x="3" y="3" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">Clean, fast, accessible code. Bringing designs to life with modern front-end technologies and a focus on performance.</p>
+            <span class="service-card__arrow">→</span>
+          </article>
+          <article class="service-card" data-animate="fade-up">
+            <div class="service-card__icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M16 4v6M16 22v6M4 16h6M22 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8.3 8.3l4.2 4.2M19.5 19.5l4.2 4.2M23.7 8.3l-4.2 4.2M12.5 19.5l-4.2 4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Motion Design</h3>
+            <p class="service-card__desc">Animation that adds meaning, not noise. Micro-interactions, scroll effects, and cinematic brand videos.</p>
+            <span class="service-card__arrow">→</span>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- WER WIR SIND -->
-    <section class="section">
+    <section class="work" id="work">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-text">
-            <span class="label reveal">Wer wir sind</span>
-            <p class="reveal delay-1">
-              VOLTA ist eine Berliner Marketing-Agentur, gegründet 2021 von Menschen,
-              die mittelmäßige Arbeit satt hatten. Wir arbeiten mit Brands,
-              die es ernst meinen — und die bereit sind, aufzufallen.
-              Keine weichgespülten Halbherzigkeiten. Nur scharfes Denken und Strategien mit Biss.
-            </p>
-            <p class="reveal delay-2">
-              Von der Strategie bis zum fertigen Kampagnenasset denken wir ganzheitlich
-              und handeln präzise. Wir nehmen nur Aufträge an, hinter denen wir stehen können —
-              und wir sagen dir ehrlich, wenn deine Idee nicht funktioniert.
-              Bevor du Geld dafür ausgibst.
-            </p>
-            <a href="wer-sind-wir.html" class="btn btn-outline reveal delay-3" style="margin-top:var(--s4);display:inline-flex;">
-              Unsere Geschichte <span class="btn-arrow">→</span>
-            </a>
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Selected Work</h2>
+          <div class="work__filters" role="tablist" aria-label="Filter projects">
+            <button class="work__filter work__filter--active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="work__filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+            <button class="work__filter" data-filter="brand" role="tab" aria-selected="false">Brand</button>
+            <button class="work__filter" data-filter="motion" role="tab" aria-selected="false">Motion</button>
           </div>
-          <div>
-            <div class="values-list">
-              <div class="value-row reveal delay-1">
-                <span class="value-row__num">01</span>
-                <span class="value-row__text">Ehrlichkeit vor Höflichkeit</span>
-              </div>
-              <div class="value-row reveal delay-2">
-                <span class="value-row__num">02</span>
-                <span class="value-row__text">Ideen mit Haltung</span>
-              </div>
-              <div class="value-row reveal delay-3">
-                <span class="value-row__num">03</span>
-                <span class="value-row__text">Resultate, die zählen</span>
-              </div>
-              <div class="value-row reveal delay-4">
-                <span class="value-row__num">04</span>
-                <span class="value-row__text">Teams statt Hierarchien</span>
+        </div>
+        <div class="work__grid" id="workGrid">
+          <article class="project-card" data-category="web" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/solstice/600/420" alt="Solstice project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Web</span>
+              <h3 class="project-card__name">Solstice Studio</h3>
+              <span class="project-card__year">2024</span>
+            </div>
+          </article>
+          <article class="project-card project-card--tall" data-category="brand" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/vanta/600/700" alt="Vanta project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Brand</span>
+              <h3 class="project-card__name">Vanta Identity</h3>
+              <span class="project-card__year">2024</span>
+            </div>
+          </article>
+          <article class="project-card" data-category="motion" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/cirrus/600/420" alt="Cirrus project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Motion</span>
+              <h3 class="project-card__name">Cirrus Motion</h3>
+              <span class="project-card__year">2023</span>
+            </div>
+          </article>
+          <article class="project-card project-card--wide" data-category="web" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/helix/900/480" alt="Helix project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Web</span>
+              <h3 class="project-card__name">Helix Platform</h3>
+              <span class="project-card__year">2023</span>
+            </div>
+          </article>
+          <article class="project-card" data-category="brand" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/drift/600/420" alt="Drift project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Brand</span>
+              <h3 class="project-card__name">Drift Agency</h3>
+              <span class="project-card__year">2023</span>
+            </div>
+          </article>
+          <article class="project-card" data-category="motion" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/pulse/600/420" alt="Pulse project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Motion</span>
+              <h3 class="project-card__name">Pulse Reel</h3>
+              <span class="project-card__year">2022</span>
+            </div>
+          </article>
+          <article class="project-card project-card--tall" data-category="web" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/meridian/600/700" alt="Meridian project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Web</span>
+              <h3 class="project-card__name">Meridian App</h3>
+              <span class="project-card__year">2022</span>
+            </div>
+          </article>
+          <article class="project-card" data-category="brand" data-animate="fade-up">
+            <div class="project-card__img">
+              <img src="https://picsum.photos/seed/haven/600/420" alt="Haven project">
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__tag">Brand</span>
+              <h3 class="project-card__name">Haven Brand</h3>
+              <span class="project-card__year">2022</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">How I work</h2>
+        </div>
+        <div class="process__steps">
+          <article class="process__step" data-animate="fade-up">
+            <span class="process__num">01</span>
+            <h3 class="process__title">Discover</h3>
+            <p class="process__desc">Deep dive into your goals, audience, and competitive landscape. I ask the hard questions so we build the right thing.</p>
+          </article>
+          <article class="process__step" data-animate="fade-up">
+            <span class="process__num">02</span>
+            <h3 class="process__title">Design</h3>
+            <p class="process__desc">Concepts, wireframes, and high-fidelity mockups. Iterative collaboration until every detail feels exactly right.</p>
+          </article>
+          <article class="process__step" data-animate="fade-up">
+            <span class="process__num">03</span>
+            <h3 class="process__title">Develop</h3>
+            <p class="process__desc">Pixel-perfect implementation with clean, maintainable code. Tested across devices, optimised for speed and accessibility.</p>
+          </article>
+          <article class="process__step" data-animate="fade-up">
+            <span class="process__num">04</span>
+            <h3 class="process__title">Deliver</h3>
+            <p class="process__desc">Launch-ready handoff with full documentation, training, and post-launch support to make sure everything flies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients" id="clients">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Trusted by the best</h2>
+        </div>
+        <div class="testimonials__grid">
+          <article class="testimonial-card" data-animate="fade-up">
+            <div class="testimonial-card__quote">
+              <svg width="32" height="24" viewBox="0 0 32 24" fill="currentColor" aria-hidden="true">
+                <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 7.6 7.6 7.2 11.2H12V24H0zm18 0V14.4C18 6.4 22.8 1.6 32.4 0L34 3.2c-5.6 1.6-8.4 4.4-8.8 8H30V24H18z"/>
+              </svg>
+            </div>
+            <p class="testimonial-card__text">"Working with VOLTA was an absolute game-changer. The new brand identity elevated us from a scrappy startup to a company that commands respect. The attention to detail is extraordinary."</p>
+            <div class="testimonial-card__author">
+              <img src="https://picsum.photos/seed/kira/48/48" alt="Kira M." class="testimonial-card__avatar">
+              <div>
+                <strong class="testimonial-card__name">Kira Müller</strong>
+                <span class="testimonial-card__role">CEO, Aurora Studio</span>
               </div>
             </div>
-          </div>
+          </article>
+          <article class="testimonial-card" data-animate="fade-up">
+            <div class="testimonial-card__quote">
+              <svg width="32" height="24" viewBox="0 0 32 24" fill="currentColor" aria-hidden="true">
+                <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 7.6 7.6 7.2 11.2H12V24H0zm18 0V14.4C18 6.4 22.8 1.6 32.4 0L34 3.2c-5.6 1.6-8.4 4.4-8.8 8H30V24H18z"/>
+              </svg>
+            </div>
+            <p class="testimonial-card__text">"The redesign of our platform increased our conversion rate by 34% in the first month. Not just beautiful design — design that actually works. We couldn't be happier."</p>
+            <div class="testimonial-card__author">
+              <img src="https://picsum.photos/seed/jonas/48/48" alt="Jonas B." class="testimonial-card__avatar">
+              <div>
+                <strong class="testimonial-card__name">Jonas Becker</strong>
+                <span class="testimonial-card__role">Founder, Helix Platform</span>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card" data-animate="fade-up">
+            <div class="testimonial-card__quote">
+              <svg width="32" height="24" viewBox="0 0 32 24" fill="currentColor" aria-hidden="true">
+                <path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 3.2C10.4 4.8 7.6 7.6 7.2 11.2H12V24H0zm18 0V14.4C18 6.4 22.8 1.6 32.4 0L34 3.2c-5.6 1.6-8.4 4.4-8.8 8H30V24H18z"/>
+              </svg>
+            </div>
+            <p class="testimonial-card__text">"From concept to launch in six weeks — and not a single compromise on quality. The motion work for our brand film has been shared thousands of times. Pure magic."</p>
+            <div class="testimonial-card__author">
+              <img src="https://picsum.photos/seed/lena/48/48" alt="Lena W." class="testimonial-card__avatar">
+              <div>
+                <strong class="testimonial-card__name">Lena Wagner</strong>
+                <span class="testimonial-card__role">Marketing Director, Drift Agency</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- CTA BLOCK -->
-    <section class="section">
-      <div class="container" style="text-align:center;">
-        <h2 class="reveal" style="
-          font-family:var(--font-display);
-          font-size:clamp(2.2rem,5.5vw,5.5rem);
-          font-weight:700;
-          letter-spacing:-0.03em;
-          line-height:1.05;
-          margin-bottom:var(--s6);
-        ">
-          Bereit für Marketing,<br>
-          <span style="color:var(--accent);">das nervt</span> — die Konkurrenz?
-        </h2>
-        <a href="kontakt.html" class="btn btn-primary reveal delay-1">
-          Jetzt loslegen <span class="btn-arrow">→</span>
-        </a>
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <h2 class="section-title">Simple pricing</h2>
+          <p class="section-sub">No surprises. Choose the package that fits your project.</p>
+        </div>
+        <div class="pricing__grid">
+          <article class="pricing-card" data-animate="fade-up">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Starter</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">€</span>
+                <span class="pricing-card__amount">799</span>
+              </div>
+              <p class="pricing-card__tagline">Perfect for small projects and landing pages.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><span class="pricing-card__check">✓</span> 1-page website</li>
+              <li><span class="pricing-card__check">✓</span> Mobile responsive</li>
+              <li><span class="pricing-card__check">✓</span> Basic animations</li>
+              <li><span class="pricing-card__check">✓</span> Contact form</li>
+              <li><span class="pricing-card__check">✓</span> 2 revision rounds</li>
+              <li><span class="pricing-card__check">✓</span> 2-week delivery</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline pricing-card__cta">Get started</a>
+          </article>
+          <article class="pricing-card pricing-card--featured" data-animate="fade-up">
+            <div class="pricing-card__badge">Most popular</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Pro</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">€</span>
+                <span class="pricing-card__amount">1.499</span>
+              </div>
+              <p class="pricing-card__tagline">Full brand experience for growing businesses.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><span class="pricing-card__check">✓</span> Up to 5 pages</li>
+              <li><span class="pricing-card__check">✓</span> Full UI/UX design</li>
+              <li><span class="pricing-card__check">✓</span> Custom animations</li>
+              <li><span class="pricing-card__check">✓</span> Brand identity included</li>
+              <li><span class="pricing-card__check">✓</span> Unlimited revisions</li>
+              <li><span class="pricing-card__check">✓</span> SEO optimisation</li>
+              <li><span class="pricing-card__check">✓</span> 4-week delivery</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary pricing-card__cta">Get started</a>
+          </article>
+          <article class="pricing-card" data-animate="fade-up">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Premium</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__currency">€</span>
+                <span class="pricing-card__amount">2.999</span>
+              </div>
+              <p class="pricing-card__tagline">End-to-end digital presence for ambitious brands.</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><span class="pricing-card__check">✓</span> Full website (10+ pages)</li>
+              <li><span class="pricing-card__check">✓</span> Complete brand system</li>
+              <li><span class="pricing-card__check">✓</span> Motion design package</li>
+              <li><span class="pricing-card__check">✓</span> CMS integration</li>
+              <li><span class="pricing-card__check">✓</span> Performance audit</li>
+              <li><span class="pricing-card__check">✓</span> 3 months support</li>
+              <li><span class="pricing-card__check">✓</span> 6-week delivery</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline pricing-card__cta">Get started</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+      <div class="container cta-section__inner">
+        <h2 class="cta-section__headline" data-animate="fade-up">Ready to build something great?</h2>
+        <p class="cta-section__sub" data-animate="fade-up">Drop your email and I'll get back to you within 24 hours.</p>
+        <form class="cta-section__form" data-animate="fade-up" action="#" method="post" novalidate>
+          <input type="email" name="email" class="cta-section__input" placeholder="your@email.com" required aria-label="Your email address">
+          <button type="submit" class="btn btn-primary cta-section__btn">Let's work together</button>
+        </form>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <span class="footer__logo">VOLTA</span>
-        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">VOLTA</a>
+        <p class="footer__tagline">Web designer based in Berlin.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#work" class="footer__link">Work</a>
+        <a href="#services" class="footer__link">Services</a>
+        <a href="#about" class="footer__link">About</a>
+        <a href="#pricing" class="footer__link">Pricing</a>
+        <a href="#cta" class="footer__link">Contact</a>
         <a href="impressum.html" class="footer__link">Impressum</a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Dribbble">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Twitter / X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2025 VOLTA. All rights reserved.</span>
       </div>
     </div>
   </footer>
