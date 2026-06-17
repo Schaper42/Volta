@@ -24,6 +24,13 @@
   function easeOutExpo(t) {
     return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
   }
+  function debounce(fn, wait) {
+    var t;
+    return function () {
+      clearTimeout(t);
+      t = setTimeout(fn, wait);
+    };
+  }
 
   /* ----------------------------------------------------------
      1. CUSTOM CURSOR
@@ -94,6 +101,7 @@
     var phrases = qsa('.hero__phrase');
     if (!phrases.length) return;
 
+    var wrap = qs('.hero__headline-wrap');
     var current = 0;
 
     /* Find the initially-active phrase */
@@ -103,6 +111,24 @@
 
     /* Ensure first phrase has is-active too */
     phrases[current].classList.add('is-active');
+
+    /* Reserve enough height for the tallest phrase so none of them
+       ever overlaps the content below, regardless of viewport width
+       or how the font wraps. */
+    function syncHeadlineHeight() {
+      if (!wrap) return;
+      var tallest = 0;
+      phrases.forEach(function (p) {
+        tallest = Math.max(tallest, p.scrollHeight);
+      });
+      if (tallest > 0) wrap.style.minHeight = tallest + 'px';
+    }
+
+    syncHeadlineHeight();
+    window.addEventListener('resize', debounce(syncHeadlineHeight, 150));
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(syncHeadlineHeight);
+    }
 
     setInterval(function () {
       phrases[current].classList.remove('is-active');
