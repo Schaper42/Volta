@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VOLTA — Kontakt</title>
-  <meta name="description" content="Schreib uns. Ruf an. Oder komm vorbei — wir machen Kaffee.">
+  <title data-de="Kontakt — Clarro" data-en="Contact — Clarro">Kontakt — Clarro</title>
+  <meta name="description" data-de="Kostenloses, unverbindliches Erstgespräch mit Clarro — Webdesign für lokale Unternehmen aus Köln." data-en="Free, no-obligation intro call with Clarro — web design for local businesses, based in Cologne." content="Kostenloses, unverbindliches Erstgespräch mit Clarro.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,297 +13,161 @@
 </head>
 <body>
 
-  <!-- Top navigation bar (visible at page top) -->
-  <nav class="topnav" id="topnav">
-    <a href="index.html" class="topnav__logo">VOLTA</a>
-    <ul class="topnav__links">
-      <li><a href="index.html" class="topnav__link">Startseite</a></li>
-      <li><a href="wer-sind-wir.html" class="topnav__link">Wer sind wir?</a></li>
-      <li class="topnav__item--has-sub">
-        <a href="unser-ziel.html" class="topnav__link">Unsere Ziele <span class="topnav__arrow">&#x25be;</span></a>
-        <ul class="topnav__sub">
-          <li><a href="unser-ziel.html" class="topnav__sublink">&#xdc;berblick</a></li>
-          <li><a href="brand-strategy.html" class="topnav__sublink">Brand Strategy</a></li>
-          <li><a href="creative-direction.html" class="topnav__sublink">Creative Direction</a></li>
-          <li><a href="performance.html" class="topnav__sublink">Performance</a></li>
-          <li><a href="social-media.html" class="topnav__sublink">Social Media</a></li>
-        </ul>
-      </li>
-      <li><a href="das-team.html" class="topnav__link">Das Team</a></li>
-      <li><a href="kontakt.html" class="topnav__link">Kontakt</a></li>
-      <li><a href="impressum.html" class="topnav__link">Impressum</a></li>
-    </ul>
-    <a href="kontakt.html" class="btn btn-primary topnav__cta">Zusammenarbeiten</a>
-  </nav>
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
 
-  <!-- Animated background blobs -->
   <div class="bg-blobs" aria-hidden="true">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
   </div>
 
-  <div class="cursor" id="cursor">
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
-  </div>
-
-  <header class="header">
-    <a href="index.html" class="logo">VOLTA</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menü öffnen">
-      <span class="menu-btn__line"></span>
-      <span class="menu-btn__line"></span>
-    </button>
-  </header>
-
-  <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
-
-  <nav class="sidebar" id="sidebar" aria-label="Hauptnavigation">
-    <div class="sidebar__top">
-      <button class="sidebar__close" id="sidebarClose" aria-label="Menü schließen">×</button>
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Clarro</a>
+      <ul class="nav__links">
+        <li><a href="leistungen.html" class="nav__link"><span data-de="Leistungen" data-en="Services">Leistungen</span></a></li>
+        <li><a href="preise.html" class="nav__link"><span data-de="Preise" data-en="Pricing">Preise</span></a></li>
+        <li><a href="roi-rechner.html" class="nav__link"><span data-de="ROI-Rechner" data-en="ROI Calculator">ROI-Rechner</span></a></li>
+        <li><a href="ueber-mich.html" class="nav__link"><span data-de="Über mich" data-en="About">Über mich</span></a></li>
+        <li><a href="blog.html" class="nav__link"><span data-de="Blog" data-en="Blog">Blog</span></a></li>
+        <li><a href="kontakt.html" class="nav__link"><span data-de="Kontakt" data-en="Contact">Kontakt</span></a></li>
+      </ul>
+      <a href="kontakt.html" class="btn btn-primary nav__cta"><span data-de="Kostenloses Gespräch" data-en="Free intro call">Kostenloses Gespräch</span></a>
+      <div class="nav__lang" role="group" aria-label="Language switch">
+        <button class="nav__lang-btn" data-lang-btn="de" aria-pressed="true">DE</button>
+        <button class="nav__lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <ul class="sidebar__nav">
-      <li class="sidebar__item" style="--i:1">
-        <a href="index.html" class="sidebar__link">
-          <span class="sidebar__num">01</span>
-          <span class="sidebar__text">Startseite</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:2">
-        <a href="wer-sind-wir.html" class="sidebar__link">
-          <span class="sidebar__num">02</span>
-          <span class="sidebar__text">Wer sind wir?</span>
-        </a>
-      </li>
-      <li class="sidebar__item sidebar__item--has-sub" style="--i:3">
-        <button class="sidebar__link sidebar__link--toggle" aria-expanded="false">
-          <span class="sidebar__num">03</span>
-          <span class="sidebar__text">Unsere Ziele</span>
-          <span class="sidebar__arrow">↓</span>
-        </button>
-        <ul class="sidebar__sub">
-          <li><a href="unser-ziel.html" class="sidebar__sublink">Überblick</a></li>
-          <li><a href="brand-strategy.html" class="sidebar__sublink">Brand Strategy</a></li>
-          <li><a href="creative-direction.html" class="sidebar__sublink">Creative Direction</a></li>
-          <li><a href="performance.html" class="sidebar__sublink">Performance</a></li>
-          <li><a href="social-media.html" class="sidebar__sublink">Social Media</a></li>
-        </ul>
-      </li>
-      <li class="sidebar__item" style="--i:4">
-        <a href="das-team.html" class="sidebar__link">
-          <span class="sidebar__num">04</span>
-          <span class="sidebar__text">Das Team</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:5">
-        <a href="kontakt.html" class="sidebar__link">
-          <span class="sidebar__num">05</span>
-          <span class="sidebar__text">Kontakt</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:6">
-        <a href="impressum.html" class="sidebar__link">
-          <span class="sidebar__num">06</span>
-          <span class="sidebar__text">Impressum</span>
-        </a>
-      </li>
-    </ul>
-      </li>
-      <li class="sidebar__item" style="--i:3">
-        <a href="das-team.html" class="sidebar__link">
-          <span class="sidebar__num">03</span>
-          <span class="sidebar__text">Das Team</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:4">
-        <a href="kontakt.html" class="sidebar__link">
-          <span class="sidebar__num">04</span>
-          <span class="sidebar__text">Kontakt</span>
-        </a>
-      </li>
-      <li class="sidebar__item" style="--i:5">
-        <a href="impressum.html" class="sidebar__link">
-          <span class="sidebar__num">05</span>
-          <span class="sidebar__text">Impressum</span>
-        </a>
-      </li>
-    </ul>
-    <div class="sidebar__footer">© 2025 VOLTA GmbH &nbsp;·&nbsp; Berlin</div>
   </nav>
 
   <main>
 
-    <!-- CONTACT HERO -->
-    <section class="contact-hero">
+    <section class="page-hero">
       <div class="container">
-        <span class="label reveal">Kontakt</span>
-        <h1 class="reveal-line delay-1" style="
-          font-family:var(--font-display);
-          font-size:clamp(3.5rem,9vw,10rem);
-          font-weight:700;
-          letter-spacing:-0.04em;
-          line-height:0.88;
-          text-transform:uppercase;
-          margin-bottom:var(--s6);
-        ">
-          <span>LASS UNS<br><span style="color:var(--accent);">REDEN.</span></span>
-        </h1>
-        <p class="reveal delay-2" style="font-size:1.05rem;line-height:1.8;color:var(--text-2);max-width:560px;">
-          Du hast ein Projekt? Wir haben Ideen. Schreib uns, ruf an oder
-          komm einfach vorbei — wir machen Kaffee, der besser ist als unser Empfang.
-        </p>
+        <span class="page-hero__eyebrow" data-de="Kontakt" data-en="Contact">Kontakt</span>
+        <h1 class="page-hero__title" data-de="Lass uns über dein Projekt sprechen" data-en="Let's talk about your project">Lass uns über dein Projekt sprechen</h1>
+        <p class="page-hero__sub" data-de="Kostenlos, unverbindlich und ohne Verkaufsdruck — schreib mir einfach, was du brauchst." data-en="Free, no-obligation and no sales pressure — just write me what you need.">Kostenlos, unverbindlich und ohne Verkaufsdruck — schreib mir einfach, was du brauchst.</p>
       </div>
     </section>
 
-    <!-- CONTACT LAYOUT -->
-    <section class="section" style="padding-top:0;">
+    <section class="contact-section">
       <div class="container">
-        <div class="contact-layout">
+        <div class="contact-grid">
 
-          <!-- Form -->
-          <div>
-            <form class="contact-form reveal" id="contactForm" novalidate>
-              <div class="form-group">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-input" type="text" id="name" name="name"
-                  placeholder="Dein vollständiger Name" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">E-Mail</label>
-                <input class="form-input" type="email" id="email" name="email"
-                  placeholder="deine@email.de" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="subject">Betreff</label>
-                <input class="form-input" type="text" id="subject" name="subject"
-                  placeholder="Worum geht es?">
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="message">Nachricht</label>
-                <textarea class="form-textarea" id="message" name="message"
-                  placeholder="Erzähl uns von deinem Projekt, Budget und Zeitplan …" required></textarea>
-              </div>
+          <div class="contact-info" data-animate="fade-up">
+            <div class="contact-info__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6l9 7 9-7"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
               <div>
-                <button type="submit" class="btn btn-primary">
-                  Nachricht senden <span class="btn-arrow">→</span>
-                </button>
+                <strong data-de="E-Mail" data-en="Email">E-Mail</strong>
+                <a href="mailto:Info@Clarro.de">Info@Clarro.de</a>
               </div>
+            </div>
+            <div class="contact-info__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+              <div>
+                <strong data-de="Adresse" data-en="Address">Adresse</strong>
+                <span>Johannisstraße 84, 50668 Köln</span>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <div>
+                <strong data-de="Antwortzeit" data-en="Response time">Antwortzeit</strong>
+                <span data-de="In der Regel innerhalb von 24 Stunden" data-en="Usually within 24 hours">In der Regel innerhalb von 24 Stunden</span>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+              <div>
+                <strong data-de="Erstgespräch" data-en="Intro call">Erstgespräch</strong>
+                <span data-de="Kostenlos und unverbindlich" data-en="Free and no obligation">Kostenlos und unverbindlich</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card" data-animate="fade-up">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+              <div class="form-field">
+                <label for="cName" data-de="Name" data-en="Name">Name</label>
+                <input type="text" id="cName" name="name" required>
+              </div>
+              <div class="form-field">
+                <label for="cEmail" data-de="E-Mail" data-en="Email">E-Mail</label>
+                <input type="email" id="cEmail" name="email" required>
+              </div>
+              <div class="form-field">
+                <label for="cCompany" data-de="Unternehmen (optional)" data-en="Company (optional)">Unternehmen (optional)</label>
+                <input type="text" id="cCompany" name="company">
+              </div>
+              <div class="form-field">
+                <label for="cInterest" data-de="Ich interessiere mich für" data-en="I'm interested in">Ich interessiere mich für</label>
+                <select id="cInterest" name="interest">
+                  <option data-de="Website-Erstellung" data-en="Website creation">Website-Erstellung</option>
+                  <option data-de="Lokales SEO" data-en="Local SEO">Lokales SEO</option>
+                  <option data-de="Wartung & Hosting" data-en="Maintenance & hosting">Wartung &amp; Hosting</option>
+                  <option data-de="Social Media & Ads" data-en="Social media & ads">Social Media &amp; Ads</option>
+                  <option data-de="Noch unsicher" data-en="Not sure yet">Noch unsicher</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="cMessage" data-de="Deine Nachricht" data-en="Your message">Deine Nachricht</label>
+                <textarea id="cMessage" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;"><span data-de="Nachricht senden" data-en="Send message">Nachricht senden</span></button>
             </form>
-
-            <div class="form-success" id="formSuccess">
-              ✓ &nbsp; Deine Nachricht ist bei uns angekommen — wir melden uns
-              innerhalb von 24 Stunden.
-            </div>
           </div>
 
-          <!-- Info panel -->
-          <div class="contact-info reveal delay-2">
-
-            <div class="contact-info-item">
-              <p class="info-label">E-Mail</p>
-              <a href="mailto:hello@volta-marketing.de" class="info-value">
-                hello@volta-marketing.de
-              </a>
-            </div>
-
-            <div class="contact-info-item">
-              <p class="info-label">Telefon</p>
-              <a href="tel:+4930123456789" class="info-value">
-                +49 30 123 456 789
-              </a>
-            </div>
-
-            <div class="contact-info-item">
-              <p class="info-label">Adresse</p>
-              <p class="info-value">
-                Torstraße 42<br>
-                10119 Berlin, Deutschland
-              </p>
-            </div>
-
-            <div class="contact-info-item">
-              <p class="info-label">Bürozeiten</p>
-              <p class="info-value">
-                Mo–Fr, 9:00 – 18:00 Uhr
-              </p>
-            </div>
-
-            <div style="margin-top:var(--s5);">
-              <p class="info-label" style="margin-bottom:var(--s2);">Folge uns</p>
-              <div class="social-row">
-                <a href="#" class="social-btn">IG</a>
-                <a href="#" class="social-btn">LI</a>
-                <a href="#" class="social-btn">TK</a>
-                <a href="#" class="social-btn">BE</a>
-              </div>
-            </div>
-
-            <!-- Map placeholder -->
-            <div style="
-              margin-top:var(--s5);
-              background:var(--bg-2);
-              border:1px solid var(--border);
-              border-radius:var(--r-lg);
-              aspect-ratio:4/3;
-              display:flex;
-              align-items:center;
-              justify-content:center;
-              overflow:hidden;
-              position:relative;
-            ">
-              <div style="
-                position:absolute;
-                inset:0;
-                background:repeating-linear-gradient(
-                  0deg,
-                  transparent,
-                  transparent 39px,
-                  var(--border) 39px,
-                  var(--border) 40px
-                ),
-                repeating-linear-gradient(
-                  90deg,
-                  transparent,
-                  transparent 39px,
-                  var(--border) 39px,
-                  var(--border) 40px
-                );
-              "></div>
-              <div style="
-                position:relative;
-                z-index:1;
-                text-align:center;
-              ">
-                <div style="
-                  width:14px;height:14px;
-                  background:var(--accent);
-                  border-radius:50%;
-                  margin:0 auto var(--s2);
-                  box-shadow:0 0 0 4px var(--accent-dim), 0 0 20px var(--accent);
-                "></div>
-                <p style="font-size:0.75rem;color:var(--text-3);letter-spacing:0.1em;text-transform:uppercase;">
-                  Torstraße 42, Berlin
-                </p>
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <span class="footer__logo">VOLTA</span>
-        <span class="footer__copy">© 2025 VOLTA GmbH, Berlin</span>
-        <a href="impressum.html" class="footer__link">Impressum</a>
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">Clarro</a>
+        <p class="footer__tagline" data-de="Webdesign für lokale Unternehmen aus Köln." data-en="Web design for local businesses, based in Cologne.">Webdesign für lokale Unternehmen aus Köln.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="leistungen.html" class="footer__link"><span data-de="Leistungen" data-en="Services">Leistungen</span></a>
+        <a href="preise.html" class="footer__link"><span data-de="Preise" data-en="Pricing">Preise</span></a>
+        <a href="roi-rechner.html" class="footer__link"><span data-de="ROI-Rechner" data-en="ROI Calculator">ROI-Rechner</span></a>
+        <a href="ueber-mich.html" class="footer__link"><span data-de="Über mich" data-en="About">Über mich</span></a>
+        <a href="blog.html" class="footer__link"><span data-de="Blog" data-en="Blog">Blog</span></a>
+        <a href="kontakt.html" class="footer__link"><span data-de="Kontakt" data-en="Contact">Kontakt</span></a>
+        <a href="impressum.html" class="footer__link"><span data-de="Impressum" data-en="Legal notice">Impressum</span></a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Clarro — Tobias Schaper. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></span>
       </div>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
