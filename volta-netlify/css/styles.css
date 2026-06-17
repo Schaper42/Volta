@@ -2,8 +2,28 @@
    VOLTA — Web Designer Portfolio CSS
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
+/* Self-hosted fonts (GDPR: no requests to third-party font CDNs, no IP transfer to Google) */
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/dmsans-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/dmsans-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/bricolage-grotesque.woff2') format('woff2');
+}
 
 /* ============================================================
    DESIGN TOKENS
@@ -23,7 +43,7 @@
   --accent-dim:   rgba(180, 154, 236, 0.16);
   --border:       rgba(51, 46, 69, 0.09);
   --border-2:     rgba(51, 46, 69, 0.16);
-  --font-display: 'Clash Display', 'DM Sans', sans-serif;
+  --font-display: 'Bricolage Grotesque', 'DM Sans', sans-serif;
   --font-body:    'DM Sans', system-ui, sans-serif;
   --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out:  cubic-bezier(0.76, 0, 0.24, 1);
@@ -1964,8 +1984,23 @@ body.cursor--click .cursor-dot {
 .blog-card__excerpt { font-size: 14px; color: var(--text-2); line-height: 1.6; flex: 1; }
 .blog-card__meta { font-size: 12px; color: var(--text-3); margin-top: auto; }
 
+.blog-card--featured { grid-column: span 2; flex-direction: row; }
+.blog-card--featured .blog-card__img { flex: 1 1 48%; aspect-ratio: auto; }
+.blog-card--featured .blog-card__body { flex: 1 1 52%; padding: 36px; justify-content: center; }
+.blog-card--featured .blog-card__tag { font-size: 12px; }
+.blog-card--featured .blog-card__title { font-size: clamp(20px, 2.6vw, 26px); }
+.blog-card--featured .blog-card__excerpt { font-size: 15px; }
+
 @media (max-width: 1000px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px)  { .blog-grid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) {
+  .blog-card--featured { grid-column: span 2; flex-direction: column; }
+  .blog-card--featured .blog-card__img { aspect-ratio: 16/10; flex: none; }
+  .blog-card--featured .blog-card__body { padding: 24px; }
+}
+@media (max-width: 640px)  {
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-card--featured { grid-column: span 1; }
+}
 
 .blog-post { max-width: 720px; margin: 0 auto; padding: 0 var(--gutter); }
 
@@ -2011,6 +2046,106 @@ body.cursor--click .cursor-dot {
 .blog-post__cta h3 { font-family: var(--font-display); font-size: 22px; margin-bottom: 10px; }
 .blog-post__cta p { color: var(--text-2); margin-bottom: 20px; }
 
+.blog-post__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.blog-post__author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.blog-post__author-name { font-size: 14px; font-weight: 600; color: var(--text); }
+.blog-post__author-role { font-size: 12px; color: var(--text-3); }
+
+.blog-post__quote {
+  margin: 36px 0;
+  padding: 28px 30px;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-dim);
+  border-radius: 0 14px 14px 0;
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.blog-post__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 36px 0;
+}
+.blog-post__stat {
+  padding: 22px 18px;
+  border-radius: 16px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.blog-post__stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 4px;
+}
+.blog-post__stat-label { font-size: 13px; color: var(--text-2); line-height: 1.4; }
+@media (max-width: 640px) { .blog-post__stats { grid-template-columns: 1fr; } }
+
+.blog-post__steps { margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 18px; }
+.blog-post__step { display: flex; gap: 16px; align-items: flex-start; }
+.blog-post__step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.blog-post__step-text { color: var(--text-2); line-height: 1.6; font-size: 16px; padding-top: 4px; }
+.blog-post__step-text strong { color: var(--text); display: block; margin-bottom: 2px; }
+
+.blog-post__highlight {
+  margin: 36px 0;
+  padding: 24px 26px;
+  border-radius: 16px;
+  background: var(--bg-1);
+  border: 1px solid var(--border-2);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.blog-post__highlight-icon { font-size: 22px; flex-shrink: 0; line-height: 1; }
+.blog-post__highlight p { margin-bottom: 0; }
+
+.blog-post__cover figcaption,
+.blog-post__cover-caption {
+  font-size: 12px;
+  color: var(--text-3);
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* ============================================================
    CONTACT PAGE
    ============================================================ */
@@ -2049,6 +2184,16 @@ body.cursor--click .cursor-dot {
 }
 .form-field textarea { resize: vertical; min-height: 120px; }
 .form-field select { cursor: pointer; }
+
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.form-consent input { margin-top: 3px; flex-shrink: 0; width: 16px; height: 16px; cursor: pointer; }
+.form-consent label { font-size: 13px; color: var(--text-2); line-height: 1.5; cursor: pointer; }
+.form-consent a { color: var(--text); text-decoration: underline; }
 
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
 

@@ -31,6 +31,11 @@
       if (text !== null) el.setAttribute('placeholder', text);
     });
 
+    document.querySelectorAll('[data-de-alt]').forEach(function (el) {
+      var text = el.getAttribute('data-' + lang + '-alt');
+      if (text !== null) el.setAttribute('alt', text);
+    });
+
     document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {
       var isActive = btn.getAttribute('data-lang-btn') === lang;
       btn.classList.toggle('is-active', isActive);
