@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-de="ROI-Rechner — Clarro" data-en="ROI Calculator — Clarro">ROI-Rechner — Clarro</title>
+  <meta name="description" data-de="Finde in 60 Sekunden heraus, wie viel eine neue Website oder besseres lokales SEO deinem Unternehmen bringen kann — mit dem kostenlosen ROI-Rechner von Clarro." data-en="Find out in 60 seconds how much a new website or better local SEO could bring your business — with Clarro's free ROI calculator." content="Finde in 60 Sekunden heraus, wie viel eine neue Website deinem Unternehmen bringen kann.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">Clarro</a>
+      <ul class="nav__links">
+        <li><a href="leistungen.html" class="nav__link"><span data-de="Leistungen" data-en="Services">Leistungen</span></a></li>
+        <li><a href="preise.html" class="nav__link"><span data-de="Preise" data-en="Pricing">Preise</span></a></li>
+        <li><a href="roi-rechner.html" class="nav__link"><span data-de="ROI-Rechner" data-en="ROI Calculator">ROI-Rechner</span></a></li>
+        <li><a href="ueber-mich.html" class="nav__link"><span data-de="Über mich" data-en="About">Über mich</span></a></li>
+        <li><a href="blog.html" class="nav__link"><span data-de="Blog" data-en="Blog">Blog</span></a></li>
+        <li><a href="kontakt.html" class="nav__link"><span data-de="Kontakt" data-en="Contact">Kontakt</span></a></li>
+      </ul>
+      <a href="kontakt.html" class="btn btn-primary nav__cta"><span data-de="Kostenloses Gespräch" data-en="Free intro call">Kostenloses Gespräch</span></a>
+      <div class="nav__lang" role="group" aria-label="Language switch">
+        <button class="nav__lang-btn" data-lang-btn="de" aria-pressed="true">DE</button>
+        <button class="nav__lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-hero__eyebrow" data-de="ROI-Rechner" data-en="ROI Calculator">ROI-Rechner</span>
+        <h1 class="page-hero__title" data-de="Lohnt sich eine neue Website für dich?" data-en="Is a new website worth it for you?">Lohnt sich eine neue Website für dich?</h1>
+        <p class="page-hero__sub" data-de="Gib ein paar Zahlen zu deinem Unternehmen ein und sieh sofort, was eine bessere Website dir bringen kann." data-en="Enter a few numbers about your business and see instantly what a better website could bring you.">Gib ein paar Zahlen zu deinem Unternehmen ein und sieh sofort, was eine bessere Website dir bringen kann.</p>
+      </div>
+    </section>
+
+    <section class="roi-explainer-section">
+      <div class="container">
+        <div class="roi-explainer" data-animate="fade-up">
+          <h2 class="section-title" style="font-size: clamp(22px,3vw,28px); margin-bottom: 20px;" data-de="Was ist ROI eigentlich?" data-en="What actually is ROI?">Was ist ROI eigentlich?</h2>
+          <div class="roi-explainer__step">
+            <span class="roi-explainer__num">1</span>
+            <div>
+              <h4 data-de="ROI = Return on Investment" data-en="ROI = Return on Investment">ROI = Return on Investment</h4>
+              <p data-de="ROI zeigt, wie viel Gewinn du im Verhältnis zu deiner Investition bekommst. Einfach gesagt: Was kommt am Ende für jeden investierten Euro zurück?" data-en="ROI shows how much profit you get relative to your investment. Simply put: what comes back for every euro invested?">ROI zeigt, wie viel Gewinn du im Verhältnis zu deiner Investition bekommst. Einfach gesagt: Was kommt am Ende für jeden investierten Euro zurück?</p>
+            </div>
+          </div>
+          <div class="roi-explainer__step">
+            <span class="roi-explainer__num">2</span>
+            <div>
+              <h4 data-de="Bei einer Website heißt das:" data-en="For a website, that means:">Bei einer Website heißt das:</h4>
+              <p data-de="Eine bessere Website wandelt mehr Besucher in Kunden um (höhere Conversion-Rate). Mehr Kunden bedeuten mehr Umsatz — und dieser Mehrumsatz wird mit den Kosten der Website verglichen." data-en="A better website converts more visitors into customers (higher conversion rate). More customers mean more revenue — and that extra revenue is compared against the website's cost.">Eine bessere Website wandelt mehr Besucher in Kunden um (höhere Conversion-Rate). Mehr Kunden bedeuten mehr Umsatz — und dieser Mehrumsatz wird mit den Kosten der Website verglichen.</p>
+            </div>
+          </div>
+          <div class="roi-explainer__step">
+            <span class="roi-explainer__num">3</span>
+            <div>
+              <h4 data-de="Die Formel" data-en="The formula">Die Formel</h4>
+              <p data-de="ROI in % = (Mehrumsatz − Investition) ÷ Investition × 100. Ein positiver ROI bedeutet: Die Website zahlt sich aus." data-en="ROI in % = (extra revenue − investment) ÷ investment × 100. A positive ROI means the website pays for itself.">ROI in % = (Mehrumsatz − Investition) ÷ Investition × 100. Ein positiver ROI bedeutet: Die Website zahlt sich aus.</p>
+            </div>
+          </div>
+          <div class="roi-formula">
+            ROI = <span>(Mehrumsatz − Investition)</span> ÷ Investition × 100
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="roi-calc-section">
+      <div class="container">
+        <form class="roi-calc" id="roiForm" data-animate="fade-up">
+          <div class="roi-calc__inputs">
+
+            <div class="roi-calc__field">
+              <label for="roiVisitors"><span data-de="Besucher pro Monat" data-en="Visitors per month">Besucher pro Monat</span> <output id="roiVisitorsOut">1.000</output></label>
+              <input type="range" id="roiVisitors" min="50" max="20000" step="50" value="1000">
+            </div>
+
+            <div class="roi-calc__field">
+              <label for="roiConversion"><span data-de="Aktuelle Conversion-Rate" data-en="Current conversion rate">Aktuelle Conversion-Rate</span> <output id="roiConversionOut">2,0%</output></label>
+              <input type="range" id="roiConversion" min="0.1" max="20" step="0.1" value="2">
+            </div>
+
+            <div class="roi-calc__field">
+              <label for="roiCustomerValue" data-de="Durchschnittlicher Kundenwert (€)" data-en="Average customer value (€)">Durchschnittlicher Kundenwert (€)</label>
+              <input type="number" id="roiCustomerValue" min="0" step="5" value="80">
+            </div>
+
+            <div class="roi-calc__field">
+              <label for="roiUplift"><span data-de="Erwartete Verbesserung durch neue Website" data-en="Expected improvement from a new website">Erwartete Verbesserung durch neue Website</span> <output id="roiUpliftOut">+30%</output></label>
+              <input type="range" id="roiUplift" min="0" max="200" step="5" value="30">
+            </div>
+
+            <div class="roi-calc__field">
+              <label for="roiInvestment" data-de="Monatliche Investition (€)" data-en="Monthly investment (€)">Monatliche Investition (€)</label>
+              <input type="number" id="roiInvestment" min="0" step="5" value="89">
+            </div>
+
+          </div>
+
+          <div class="roi-calc__results">
+            <div class="roi-calc__result">
+              <span class="roi-calc__result-label" data-de="Kunden bisher / Monat" data-en="Customers before / month">Kunden bisher / Monat</span>
+              <span class="roi-calc__result-value" id="roiCustomersBefore">20,0</span>
+            </div>
+            <div class="roi-calc__result">
+              <span class="roi-calc__result-label" data-de="Kunden mit neuer Website" data-en="Customers with new website">Kunden mit neuer Website</span>
+              <span class="roi-calc__result-value" id="roiCustomersAfter">26,0</span>
+            </div>
+            <div class="roi-calc__result">
+              <span class="roi-calc__result-label" data-de="Zusätzlicher Umsatz" data-en="Extra revenue">Zusätzlicher Umsatz</span>
+              <span class="roi-calc__result-value" id="roiExtraRevenue">480 € / Monat</span>
+            </div>
+            <div class="roi-calc__result roi-calc__result--highlight">
+              <span class="roi-calc__result-label" data-de="Nettogewinn nach Investition" data-en="Net gain after investment">Nettogewinn nach Investition</span>
+              <span class="roi-calc__result-value" id="roiNetGain">+391 € / Monat</span>
+            </div>
+            <div class="roi-calc__result roi-calc__result--highlight">
+              <span class="roi-calc__result-label" data-de="ROI" data-en="ROI">ROI</span>
+              <span class="roi-calc__result-value" id="roiPercent">+439%</span>
+            </div>
+          </div>
+        </form>
+
+        <p class="pricing-note" data-de="Diese Rechnung ist eine vereinfachte Schätzung zur Orientierung und keine Garantie für tatsächliche Ergebnisse. Die echten Zahlen hängen von deiner Branche, Region und Website ab." data-en="This calculation is a simplified estimate for guidance and not a guarantee of actual results. Real numbers depend on your industry, region and website.">Diese Rechnung ist eine vereinfachte Schätzung zur Orientierung und keine Garantie für tatsächliche Ergebnisse. Die echten Zahlen hängen von deiner Branche, Region und Website ab.</p>
+      </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+      <div class="container cta-section__inner">
+        <h2 class="cta-section__headline" data-animate="fade-up" data-de="Bereit, dieses Potenzial zu nutzen?" data-en="Ready to unlock that potential?">Bereit, dieses Potenzial zu nutzen?</h2>
+        <p class="cta-section__sub" data-animate="fade-up" data-de="Lass uns im kostenlosen Gespräch besprechen, wie deine Website dieses Ergebnis erreichen kann." data-en="Let's discuss in a free call how your website can achieve this result.">Lass uns im kostenlosen Gespräch besprechen, wie deine Website dieses Ergebnis erreichen kann.</p>
+        <div data-animate="fade-up">
+          <a href="kontakt.html" class="btn btn-primary cta-section__btn"><span data-de="Kostenloses Gespräch buchen" data-en="Book a free call">Kostenloses Gespräch buchen</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">Clarro</a>
+        <p class="footer__tagline" data-de="Webdesign für lokale Unternehmen aus Köln." data-en="Web design for local businesses, based in Cologne.">Webdesign für lokale Unternehmen aus Köln.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="leistungen.html" class="footer__link"><span data-de="Leistungen" data-en="Services">Leistungen</span></a>
+        <a href="preise.html" class="footer__link"><span data-de="Preise" data-en="Pricing">Preise</span></a>
+        <a href="roi-rechner.html" class="footer__link"><span data-de="ROI-Rechner" data-en="ROI Calculator">ROI-Rechner</span></a>
+        <a href="ueber-mich.html" class="footer__link"><span data-de="Über mich" data-en="About">Über mich</span></a>
+        <a href="blog.html" class="footer__link"><span data-de="Blog" data-en="Blog">Blog</span></a>
+        <a href="kontakt.html" class="footer__link"><span data-de="Kontakt" data-en="Contact">Kontakt</span></a>
+        <a href="impressum.html" class="footer__link"><span data-de="Impressum" data-en="Legal notice">Impressum</span></a>
+      </nav>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Clarro — Tobias Schaper. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/roi-calculator.js"></script>
+</body>
+</html>

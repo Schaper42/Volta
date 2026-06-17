@@ -728,6 +728,103 @@
 
 
   /* ----------------------------------------------------------
+     INTERACTIVE BACKGROUND — blobs react to the cursor
+     (separate from the existing scroll-parallax on .bg-blobs and
+      the CSS blob-float animation: this offsets each blob with
+      margin so it never fights either transform.)
+  ---------------------------------------------------------- */
+  (function initInteractiveBlobs() {
+    var blobs = qsa('.blob');
+    if (!blobs.length) return;
+
+    var mults   = [0.05, -0.04, 0.035];
+    var targets = Array.from(blobs).map(function () { return { x: 0, y: 0 }; });
+    var current = Array.from(blobs).map(function () { return { x: 0, y: 0 }; });
+
+    document.addEventListener('mousemove', function (e) {
+      var dx = e.clientX - window.innerWidth  / 2;
+      var dy = e.clientY - window.innerHeight / 2;
+      blobs.forEach(function (_, i) {
+        var m = mults[i % mults.length];
+        targets[i].x = dx * m;
+        targets[i].y = dy * m;
+      });
+    });
+
+    (function loop() {
+      blobs.forEach(function (blob, i) {
+        current[i].x = lerp(current[i].x, targets[i].x, 0.04);
+        current[i].y = lerp(current[i].y, targets[i].y, 0.04);
+        blob.style.marginLeft = current[i].x.toFixed(1) + 'px';
+        blob.style.marginTop  = current[i].y.toFixed(1) + 'px';
+      });
+      requestAnimationFrame(loop);
+    })();
+  })();
+
+
+  /* ----------------------------------------------------------
+     FLOATING GALLERY CAROUSEL — autoplay (CSS) + drag-to-scroll
+     + per-card random bob timing for an organic, non-mechanical feel
+  ---------------------------------------------------------- */
+  (function initGalleryCarousel() {
+    qsa('.gallery-carousel').forEach(function (carousel) {
+      var track = qs('.gallery-carousel__track', carousel);
+      if (!track) return;
+
+      /* Give each card its own bob duration/delay so they don't move in sync */
+      qsa('.gallery-carousel__item', track).forEach(function (item, i) {
+        item.style.setProperty('--bob-dur', (6 + (i % 5) * 0.7).toFixed(1) + 's');
+        item.style.setProperty('--bob-delay', (-(i % 7) * 0.9).toFixed(1) + 's');
+      });
+
+      var isDown = false;
+      var startX = 0;
+      var scrollStart = 0;
+      var currentOffset = 0;
+
+      function setPaused(paused) {
+        carousel.classList.toggle('is-dragging', paused);
+      }
+
+      track.addEventListener('pointerdown', function (e) {
+        isDown = true;
+        startX = e.clientX;
+        var matrix = window.getComputedStyle(track).transform;
+        var match = /matrix\(([^)]+)\)/.exec(matrix);
+        scrollStart = match ? parseFloat(match[1].split(',')[4]) || 0 : 0;
+        setPaused(true);
+        track.style.transition = 'none';
+        track.setPointerCapture && track.setPointerCapture(e.pointerId);
+      });
+
+      track.addEventListener('pointermove', function (e) {
+        if (!isDown) return;
+        var dx = e.clientX - startX;
+        currentOffset = scrollStart + dx;
+        track.style.animation = 'none';
+        track.style.transform = 'translateX(' + currentOffset + 'px)';
+      });
+
+      function release() {
+        if (!isDown) return;
+        isDown = false;
+        setPaused(false);
+        /* Hand control back to the CSS animation after a short pause */
+        setTimeout(function () {
+          track.style.transition = '';
+          track.style.transform = '';
+          track.style.animation = '';
+        }, 300);
+      }
+
+      track.addEventListener('pointerup', release);
+      track.addEventListener('pointerleave', release);
+    });
+  })();
+
+
+  /* ----------------------------------------------------------
      SHAKE KEYFRAME INJECTION
      (Ensures the CSS shake animation exists for form errors)
   ---------------------------------------------------------- */
