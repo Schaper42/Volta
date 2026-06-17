@@ -425,6 +425,10 @@ body.cursor--click .cursor-dot {
 
 .hero__content { max-width: 920px; }
 
+@media (min-width: 901px) {
+  .hero__content { max-width: min(920px, 60vw); }
+}
+
 .hero__headline-wrap {
   position: relative;
   min-height: clamp(150px, 34vw, 420px);
