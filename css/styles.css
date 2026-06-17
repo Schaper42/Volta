@@ -426,11 +426,11 @@ body.cursor--click .cursor-dot {
 
 .hero__headline-wrap {
   position: relative;
-  min-height: clamp(100px, 14vw, 230px);
+  min-height: clamp(150px, 34vw, 420px);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .hero__headline {
