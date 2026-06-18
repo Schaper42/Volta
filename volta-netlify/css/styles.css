@@ -2164,6 +2164,24 @@ body.cursor--click .cursor-dot {
 .blog-post__highlight-icon { font-size: 22px; flex-shrink: 0; line-height: 1; }
 .blog-post__highlight p { margin-bottom: 0; }
 
+.blog-post__source {
+  margin: 28px 0;
+  padding: 18px 22px;
+  border-radius: 14px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: 14px;
+}
+.blog-post__source svg { flex-shrink: 0; margin-top: 2px; color: var(--accent); }
+.blog-post__source-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-2); margin-bottom: 4px; }
+.blog-post__source p { margin: 0; color: var(--text-2); line-height: 1.6; }
+.blog-post__source a { color: var(--text); font-weight: 600; text-decoration: underline; text-decoration-color: var(--border-2); }
+.blog-post__source a:hover { color: var(--accent); }
+
 .blog-post__cover figcaption,
 .blog-post__cover-caption {
   font-size: 12px;
