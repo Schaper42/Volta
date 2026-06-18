@@ -398,6 +398,32 @@ body.cursor--click .cursor-dot {
   margin-bottom: 64px;
 }
 
+.roi-teaser__desc {
+  font-size: 15px;
+  color: var(--text-2);
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 16px auto 0;
+}
+
+.roi-teaser__points {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 32px 0 28px;
+}
+
+.roi-teaser__point {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+.roi-teaser__point svg { color: var(--accent); flex-shrink: 0; }
+
 /* ============================================================
    SCROLL ANIMATIONS
    ============================================================ */
